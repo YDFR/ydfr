@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a :link {
+    text-decoration: none;
+}
+a :visited {
+    text-decoration: none;
+}
+a :active {
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 48px;
+    width: 400px;
+    height:400px;
+    background: #ccc;
+    text-align: center;
+    color: #444;
+    overflow: hidden;
+}
+.menu:hover {
+    background: #A00;
+    color: #FFF;
+}
+.menu:active {
+    background: #5c0000;
+    color: #ffe34b;
+}
+.menuText {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: inherit;
+    margin: 30px;
+    padding: 10px;
+    border: 10px solid yellow;
+
+}
+.menuText:hover {
+    animation: moveUp100 1s 1;
+}
+@keyframes moveUp100{
+    from {
+        top: 0;
+    }
+    to {
+        top: -100;
+    }
+}
+
+.menuTextUp {
+    height: 100px;
+    position: relative;
+
+
+}
+.menuTextDown {
+    height: 100px;
+    position: relative;
+    top: 16px;
+    color: red;
+}
+
+.neibu {
+    width: 100px;
+    height: 100px;
+
+}

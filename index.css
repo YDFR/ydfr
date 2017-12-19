@@ -1,0 +1,20 @@
+body{
+        margin: 0px;
+        padding: 0px;}
+    .daohanglan{
+        background-color: #1e1e1e;
+        height: 123px;
+        color: aliceblue;
+        list-style-type:none;
+        font-size: 16px;
+       }
+    .daohanglan li{
+           display:inline-block;
+        margin-left: 200px;
+        margin-top: 50px
+
+    }
+    .shangbu{
+        background-color: #f4f4f4;
+        height: 688px;
+    }
