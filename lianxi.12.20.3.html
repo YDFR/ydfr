@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超级卖场</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lianxi.12.20.3.css">
+</head>
+
+<body style="padding: 16px">
+    <div id="picbox" class="row">
+        <div id="minpic" class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+               <img id="tupian" src="imgs/%E9%9B%AA%E6%99%AF.jpg" alt="...">
+               <h4 id="wenzi">hello</h4>
+           </a>
+        </div>
+    </div>
+</body>
+
+<script>
+    //$("#picbox").append($("#minpic").clone());
+    //$("#minbox").clone().appendTo($("#picbox"));
+    //var xiaotu = $("#minpic").clone();
+    //xiaotu.find("#wenzi").html("yahoo!");
+    //xiaotu.appendTo($("#picbox"));
+    var xuejing={
+        src:"imgs/xuejing.jpg",
+        wenzi:"雪景",
+    }
+
+    var goutou={
+        src:"imgs/goutou.png",
+        wenzi:"狗头",
+    }
+
+    var jihe =[xuejing,goutou,xuejing,goutou,xuejing,goutou];
+
+
+    function fuzhi(shuju) {
+
+        var xiaotu = $("#minpic").clone();
+        xiaotu.find("#wenzi").html(shuju.wenzi);
+        xiaotu.find("#wenzi").css({color: "red"});
+        xiaotu.find("#tupian").attr('src',shuju.src);
+        xiaotu.appendTo($("#picbox"));
+
+    }
+
+    for(var i = 0;i < 6; i++) {
+        fuzhi(jihe[i]);
+    }
+
+</script>
+
+
+
+
+</html>
