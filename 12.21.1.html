@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超级卖场</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lianxi.12.20.1.css">
+</head>
+
+<body style="padding: 16px">
+    <!--<a id="top" href="#xx">
+        <div class="btn brn-primary">到bb</div>
+    </a>
+    <div style="height: 800px;background: #CCC">AAA</div>
+    <div id="xx" style="height: 200px;background: #EEE">BBB</div>
+    <a href="#top">
+        <div class="btn brn-primary">回顶部</div>
+    </a>
+    <div style="height: 800px;background: #CCC">CCC</div>-->
+    <div class="btn btn-primary" onclick='wxt()'>点我</div>
+    <h1 id="nin">您点击<span id="cishu"></span>次!</h1>
+</body>
+<script>
+    /*var onoff = 1;
+        var
+        var ci=0;*/
+    function wxt() {
+        if ($('#nin').css('display') == 'none') {
+            $('#nin').show(1000);
+        } else {
+            $('#nin').hide(1000);
+        }
+        /*ci++;
+        $('#cishu').html(ci);
+        alert('dududududu1!');
+        alert('dududududu2!');
+        alert('dududududu3!');*/
+    }
+</script>
+
+</html>
